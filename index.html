@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Treehugger</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+<section>
+    <h1>Going Out on a Lambda</h1>
+    <h2>🐑</h2>
+    <h2>2017-08-08</h2>
+</section>
+
+<section>
+    <h1>The Problem</h1>
+    <ul>
+        <li>JIRA Ticket Submission form in JS</li>
+        <li>Initially put on public webpage with no authentication...</li>
+    </ul>
+</section>
+
+<section>
+    <p>
+        <img src="img/please-delete-timeout-com.png" alt="" style="width: 50%">
+    </p>
+    <p>
+        (Bernie is the CTO)
+    </p>
+</section>
+
+<section>
+    <h1>Solution</h1>
+    <ul>
+        <li>Google Login! We just moved from Office 365 to G Suite</li>
+        <li>Don't want to run a server...</li>
+        <li>Can't use S3 to protect the single file (magic JS from JIRA)</li>
+        <li>Django!</li>
+    </ul>
+</section>
+
+<section>
+    <h1>Demo</h1>
+    <p>
+        <a href="https://gpsupport.timeout.com/">gpsupport.timeout.com</a>
+    </p>
+</section>
+
+<section>
+    <h1>Code Walkthrough</h1>
+</section>
+
+<section>
+    <h2>Thank you!</h2>
+    <ul>
+        <li>Questions?</li>
+        <li><a href="https://github.com/YPlan/ansible-python-lambda">github.com/YPlan/ansible-python-lambda</a></p>
+        <li><a href="https://github.com/slank/awsgi">github.com/slank/awsgi</a></li>
+        <li>Slides <a href="https://github.com/adamchainz/talk-going-out-on-a-lambda">github.com/adamchainz/talk-going-out-on-a-lambda</a></p>
+    </ul>
+</section>
+
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+            });
+        </script>
+    </body>
+</html>
